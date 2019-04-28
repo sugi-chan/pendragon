@@ -1,0 +1,6 @@
+battle,plan
+one,"targetEnemy1,attack"
+two,"s1s3,msb,ms2,attack"
+two,"s1s1,attack"
+three,"targetEnemy2,s2s1,s2s2,s2s3,s3s1,s3s3,attack"
+three,"msb,ms1,attack_2,np2_1,np3_1"

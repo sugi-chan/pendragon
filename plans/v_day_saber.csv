@@ -1,0 +1,5 @@
+battle,plan
+one,"s1s3,attack"
+two,"s3s1,attack"
+three,"s3s3,s2s1,s2s2,s2s3,s1s3,s1s1,msb,ms1,attack_2,np3_1,np1_1"
+three,"attack_2,np2_1,np1_1"
