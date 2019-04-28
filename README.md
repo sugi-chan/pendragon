@@ -14,4 +14,9 @@ This repository is an attempt to open source some of the work I have done around
 
 1) To use this repo the additional model files are required download the model directory [here](https://drive.google.com/drive/folders/1JPgKi9n4vs0sEtbgji2NK5Bn5-nEcY-g?usp=sharing) and place it in this repo
 
-2) the biggest issue right now is configuring the repo to extract game information... This is something that I am going to work on streamlining and writing more instructions for
+2) the biggest issue right now is configuring the repo to extract game information... This is something that I am going to work on streamlining and writing more instructions for.
+
+- `grab.py` is what I use to get a screenshot of the teamvierwer window which gets run pretty regularly. Additionally this screenshot is what gets sliced. I take a screenshot and find the screen locations of boxes that need to be cropped out like command cards, attack button, and the turn counter. 
+
+- `mouse_pos.py`: is a helper script I use to determine the locations I need for the different sections. This is mostly for button pressing. So determining where skill buttons are,, or card where to click on a command card (previous section was how to crop them out to feed into models) or how to use master skills etc.
+
