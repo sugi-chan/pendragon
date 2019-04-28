@@ -2,7 +2,7 @@
 
 This repository is an attempt to open source some of the work I have done around building a number of bots to play the game Fate Grand Order. The current state of this bot is that it uses the framework I built in my first bot [project pendragon](https://github.com/sugi-chan/project_pendragon) and the reinforcement learning bot that I built in my second bot [pendragon alter](https://github.com/sugi-chan/Pendragon_Alter). While the structure of this bot is relatively similar to my two previous ones, it is different in a number of ways.
 
-## upgrades from other bots
+## Upgrades from the previous bots
 
 1) **Skills can now be used**: The RL bot does not have access to skills, but I have added an interface via `battle plans` with an option when running the `pendragon.py` script to feed in a formatted csv for round by round or turn by turn orders. This allows for skills and NPs to be used at specific timings and I have found useful for 3 turn farming of embers or clearing more difficult quests repeatedly
 
