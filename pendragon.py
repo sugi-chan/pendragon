@@ -108,14 +108,14 @@ def main(skill_usage_list):
 				screen = grab_screen_fgo()
 				card_list, brave_chain_raw_img_list = get_cards(screen)
 				
-				brave_chain_bool = False
-				if brave_chain_bool == True:
-					print('brave')
-					pick_cards_from_card_list(card_list_brave)
+				#brave_chain_bool = False
+				#if brave_chain_bool == True:
+				#	print('brave')
+				#	pick_cards_from_card_list(card_list_brave)
 
-				else:
-					print('rl_bot')
-					rl_bot_card_choice(card_list)
+				
+				print('rl_bot')
+				rl_bot_card_choice(card_list)
 
 			else:
 				continue
