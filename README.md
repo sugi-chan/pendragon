@@ -6,10 +6,6 @@
 
 This repository is an attempt to open source some of the work I have done around building a number of bots to play the game Fate Grand Order. The current state of this bot is that it uses the framework I built in my first bot [project pendragon](https://github.com/sugi-chan/project_pendragon) and the reinforcement learning bot that I built in my second bot [pendragon alter](https://github.com/sugi-chan/Pendragon_Alter). While the structure of this bot is relatively similar to my two previous ones, it is different in a number of ways.
 
-<p align="center">
-  <img width="640" height="400" src="https://cdn-images-1.medium.com/max/800/1*SfuIcXBrkxRGTWIiYIQ2dA.gif">
-</p>
-
 ## Upgrades from the previous bots
 
 1) **Skills can now be used**: The RL bot does not have access to skills, but I have added an interface via `battle plans` with an option when running the `pendragon.py` script to feed in a formatted csv for round by round or turn by turn orders. This allows for skills and NPs to be used at specific timings and I have found useful for 3 turn farming of embers or clearing more difficult quests repeatedly
@@ -17,6 +13,10 @@ This repository is an attempt to open source some of the work I have done around
 2) **Turn tracking**: I had struggled previously on how to track turns. I added a `round/wave counter` essentially made a 3 class classifier to count which round it is. downsides of this are it wouldn't detect the rare quest with a 4th wave, and isn't the most effective method for turn counting... However my logic was that most skills or NP usages that need to be scripted would need to be used on specific waves/rounds.
 
 3) **improved a number of models**: I found that a number of models I built for my initial models did not generawlize well to different levels so I added additional examples and trained some larger models (had been using resnet18s for detecting the attack button detection. so I retrained it and upgraded those to resnet34s
+
+<p align="center">
+  <img width="640" height="400" src="https://cdn-images-1.medium.com/max/800/1*SfuIcXBrkxRGTWIiYIQ2dA.gif">
+</p>
 
 ## Things needed to use the repo
 
