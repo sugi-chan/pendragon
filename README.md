@@ -12,7 +12,7 @@ This repository is an attempt to open source some of the work I have done around
 
 2) **Turn tracking**: I had struggled previously on how to track turns. I added a `round/wave counter` essentially made a 3 class classifier to count which round it is. downsides of this are it wouldn't detect the rare quest with a 4th wave, and isn't the most effective method for turn counting... However my logic was that most skills or NP usages that need to be scripted would need to be used on specific waves/rounds.
 
-3) **improved a number of models**: I found that a number of models I built for my initial models did not generawlize well to different levels so I added additional examples and trained some larger models (had been using resnet18s for detecting the attack button detection. so I retrained it and upgraded those to resnet34s
+3) **improved a number of models**: I found that a number of models I built for my initial models did not generawlize well to different levels so I added additional examples and trained some larger models. I had been using resnet18s for detecting the attack button detection. so I retrained it and upgraded those to resnet34s. In theory the new attack button model could be used to count turns as well... but for now I think determining the round is more important.
 
 <p align="center">
   <img width="640" height="400" src="https://cdn-images-1.medium.com/max/800/1*SfuIcXBrkxRGTWIiYIQ2dA.gif">
@@ -32,9 +32,9 @@ This repository is an attempt to open source some of the work I have done around
 
 ## TODO
 
-- make a document or something to show to how configure the repo
+- make a document or something to show to how configure the repo since there is a good bit of 1 time manual work.
 
-- clean up code stylistically and refactor parts of it to make it cleaner
+- clean up code stylistically and refactor parts of it to make it cleaner. 
 
-- add more documentation on how to do things like setup a `battle plan`
+- add more documentation on how to do things like setup a `battle plan`.
 
