@@ -1,6 +1,14 @@
+<p align="center">
+  <img width="640" height="400" src="https://cdn-images-1.medium.com/max/1200/1*OW5YsC_XyyBn6bakstvxaA.jpeg">
+</p>
+
 # Pendragon
 
 This repository is an attempt to open source some of the work I have done around building a number of bots to play the game Fate Grand Order. The current state of this bot is that it uses the framework I built in my first bot [project pendragon](https://github.com/sugi-chan/project_pendragon) and the reinforcement learning bot that I built in my second bot [pendragon alter](https://github.com/sugi-chan/Pendragon_Alter). While the structure of this bot is relatively similar to my two previous ones, it is different in a number of ways.
+
+<p align="center">
+  <img width="640" height="400" src="https://cdn-images-1.medium.com/max/800/1*SfuIcXBrkxRGTWIiYIQ2dA.gif">
+</p>
 
 ## Upgrades from the previous bots
 
@@ -19,4 +27,14 @@ This repository is an attempt to open source some of the work I have done around
 - `grab.py` is what I use to get a screenshot of the teamvierwer window which gets run pretty regularly. Additionally this screenshot is what gets sliced. I take a screenshot and find the screen locations of boxes that need to be cropped out like command cards, attack button, and the turn counter. Most of the inputs for this are housed in the `skill_sheet.csv`
 
 - `mouse_pos.py`: is a helper script I use to determine the locations I need for the different sections. This is mostly for button pressing. So determining where skill buttons are,, or card where to click on a command card (previous section was how to crop them out to feed into models) or how to use master skills etc. most of these are in `utils.py`
+
+3) My personal setup has been using pytorch 1.0.1 and tensorflow 1.0 which is now outdated. So I have not tested with the newest versions of tensorflow for breaking changes.
+
+## TODO
+
+- make a document or something to show to how configure the repo
+
+- clean up code stylistically and refactor parts of it to make it cleaner
+
+- add more documentation on how to do things like setup a `battle plan`
 
