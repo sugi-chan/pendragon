@@ -20,7 +20,7 @@ This repository is an attempt to open source some of the work I have done around
 
 ## Things needed to use the repo
 
-1) To use this repo the additional model files are required download the model directory [here](https://drive.google.com/drive/folders/1JPgKi9n4vs0sEtbgji2NK5Bn5-nEcY-g?usp=sharing) and place it in this repo
+1) To use this repo the additional model files are required download the model directory [here](https://drive.google.com/drive/folders/1JPgKi9n4vs0sEtbgji2NK5Bn5-nEcY-g?usp=sharing) and place the models inside of this directory in a folder called `models` alternatively they can be saved anywhere, but sctipts will need to be adjusted to read in the appropriate models.
 
 2) the biggest issue right now is configuring the repo to extract game information... This is something that I am going to work on streamlining and writing more instructions for.
 
